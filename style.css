@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  overflow: none;
+}
+
+.bg-img .dark-bg {
+  display: none;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBFAFB;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 4.8rem;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+nav .icon img {
+  cursor: pointer;
+}
+
+.input {
+  margin-top: 2.7rem;
+  height: 4rem;
+  padding: 1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  background-color: #FEFEFF;
+  border-radius: 5px;
+}
+
+.input div {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid #E5E5EB;
+  margin-right: 1rem;
+}
+
+.input input {
+  font-size: 1.15rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1rem 0.5rem;
+  color: #595A6C;
+}
+
+.sun {
+  display: none;
+}
+
+.lists {
+  margin-top: 1.5rem;
+  background-color: #FEFEFF;
+  box-shadow: 0px 30px 23px -4px rgba(228, 230, 234, 0.73);
+  width: 33.8em;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border-bottom: 1px solid #717171;
+  font-size: 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.strikethroughli {
+  color: #A8A6B1;
+}
+
+.list .done {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid hsl(280, 87%, 65%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.3rem;
+}
+
+.list .my-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 2rem auto;
+  color: #202239;
+  display: none;
+}
+
+.footer .track ul {
+  display: flex;
+  align-items: center;
+  margin-left: 3.5rem;
+}
+
+.track ul li {
+  margin-right: 1rem;
+  list-style: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active {
+  color: #507FCF;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (width<=50em) {
+  .container {
+    width: 90%;
+  }
+
+  nav h1 {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .input div,.list .done {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #E5E5EB;
+  margin-right: 1rem;
+}
+
+  .lists {
+    margin: auto;
+    margin-top: 1.5rem;
+    width: 100%;
+    position: relative;
+  }
+
+  .track {
+    position: absolute;
+    bottom: -15%;
+    left: 0%;
+    width: 100%;
+    background-color: #FEFFFE;
+    border-radius: 5px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .track ul {
+    margin-left: 3rem;
+  }
+
+  .footer ul li {
+    margin-right: 2rem;
+  }
+}
